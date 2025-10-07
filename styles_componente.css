@@ -1,0 +1,118 @@
+
+:root{
+  --bg-page: #2b2b2b;
+  --card-bg: #ffffff;
+  --accent: #126ae2;
+  --text: #222;
+  --muted: #666;
+}
+
+:host {
+  display: block;
+}
+
+
+.app-wrapper {
+  max-width: 360px;           
+  margin: 28px auto;         
+  padding: 16px;
+  background: linear-gradient(180deg, #fff, #fff);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+
+:host(:not([hidden])) {
+  margin: 0;
+  padding: 18px 0;
+}
+
+.comp-aula {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.titulo_aula {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.p {
+  margin: 0 0 12px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.lable-prova {
+  display: block;
+  width: calc(100% - 0px);
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: white;
+  font-weight: 700;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+
+.lables {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.lable-frequencia,
+.lable-nota {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: white;
+  display: inline-block;
+  min-width: 68px;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+.lable-frequencia {
+  background-color: #126ae2; 
+}
+
+
+.lable-nota.vermelha {
+  background-color: #e74c3c;
+}
+
+.lable-nota.laranja {
+  background-color: #f39c12;
+}
+
+.lable-nota.verde {
+  background-color: #2ecc71;
+}
+
+
+.app-wrapper > div {
+  width: 100%;
+}
+
+
+@media (max-width: 380px) {
+  .app-wrapper {
+    margin: 12px;
+    border-radius: 8px;
+    padding: 12px;
+  }
+}
