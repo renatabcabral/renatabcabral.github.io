@@ -1,15 +1,1 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Atividade - Princípios de Design (Inatel)</title>
-</head>
-<body>
-  <!-- componente customizado -->
-  <aulas-component id="componente"></aulas-component>
-
-  <!-- script do componente - deve ficar depois do componente no body -->
-  <script src="script_componente.js"></script>
-</body>
-</html>
+Neste exemplo prático, foi implementado um componente personalizado com o objetivo de exibir dinamicamente diferentes informações obtidas através de uma estrutura de dados JSON. Com base no projeto de laboratório, diversas informações para o usuário foram organizadas de maneira visual em um cartão, contendo: local; horário; nota média; frequência; e data de prova
